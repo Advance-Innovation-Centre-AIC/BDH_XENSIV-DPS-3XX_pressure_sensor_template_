@@ -4,74 +4,74 @@
 # the next time 'make getlibs' is run.
 #
 modlibs:
-	(cd BDH_sensor_orientation_bmx160_template; make modlibs)
+	(cd BDH_XENSIV-DPS-3XX_pressure_sensor_template; make modlibs)
 .PHONY: modlibs
 
 library-manager:
-	(cd BDH_sensor_orientation_bmx160_template; make library-manager)
+	(cd BDH_XENSIV-DPS-3XX_pressure_sensor_template; make library-manager)
 .PHONY: library-manager
 
 qspi-configurator:
-	(cd BDH_sensor_orientation_bmx160_template; make qspi-configurator)
+	(cd BDH_XENSIV-DPS-3XX_pressure_sensor_template; make qspi-configurator)
 .PHONY: qspi-configurator
 
 config:
-	(cd BDH_sensor_orientation_bmx160_template; make config)
+	(cd BDH_XENSIV-DPS-3XX_pressure_sensor_template; make config)
 .PHONY: config
 
 device-configurator:
-	(cd BDH_sensor_orientation_bmx160_template; make device-configurator)
+	(cd BDH_XENSIV-DPS-3XX_pressure_sensor_template; make device-configurator)
 .PHONY: device-configurator
 
 capsense-configurator:
-	(cd BDH_sensor_orientation_bmx160_template; make capsense-configurator)
+	(cd BDH_XENSIV-DPS-3XX_pressure_sensor_template; make capsense-configurator)
 .PHONY: capsense-configurator
 
 capsense-tuner:
-	(cd BDH_sensor_orientation_bmx160_template; make capsense-tuner)
+	(cd BDH_XENSIV-DPS-3XX_pressure_sensor_template; make capsense-tuner)
 .PHONY: capsense-tuner
 
 seglcd-configurator:
-	(cd BDH_sensor_orientation_bmx160_template; make seglcd-configurator)
+	(cd BDH_XENSIV-DPS-3XX_pressure_sensor_template; make seglcd-configurator)
 .PHONY: seglcd-configurator
 
 bsp-assistant:
-	(cd BDH_sensor_orientation_bmx160_template; make bsp-assistant)
+	(cd BDH_XENSIV-DPS-3XX_pressure_sensor_template; make bsp-assistant)
 .PHONY: bsp-assistant
 
 config_bt:
-	(cd BDH_sensor_orientation_bmx160_template; make config_bt)
+	(cd BDH_XENSIV-DPS-3XX_pressure_sensor_template; make config_bt)
 .PHONY: config_bt
 
 bt-configurator:
-	(cd BDH_sensor_orientation_bmx160_template; make bt-configurator)
+	(cd BDH_XENSIV-DPS-3XX_pressure_sensor_template; make bt-configurator)
 .PHONY: bt-configurator
 
 config_usbdev:
-	(cd BDH_sensor_orientation_bmx160_template; make config_usbdev)
+	(cd BDH_XENSIV-DPS-3XX_pressure_sensor_template; make config_usbdev)
 .PHONY: config_usbdev
 
 usbdev-configurator:
-	(cd BDH_sensor_orientation_bmx160_template; make usbdev-configurator)
+	(cd BDH_XENSIV-DPS-3XX_pressure_sensor_template; make usbdev-configurator)
 .PHONY: usbdev-configurator
 
 smartio-configurator:
-	(cd BDH_sensor_orientation_bmx160_template; make smartio-configurator)
+	(cd BDH_XENSIV-DPS-3XX_pressure_sensor_template; make smartio-configurator)
 .PHONY: smartio-configurator
 
 config_ezpd:
-	(cd BDH_sensor_orientation_bmx160_template; make config_ezpd)
+	(cd BDH_XENSIV-DPS-3XX_pressure_sensor_template; make config_ezpd)
 .PHONY: config_ezpd
 
 ez-pd-configurator:
-	(cd BDH_sensor_orientation_bmx160_template; make ez-pd-configurator)
+	(cd BDH_XENSIV-DPS-3XX_pressure_sensor_template; make ez-pd-configurator)
 .PHONY: ez-pd-configurator
 
 config_lin:
-	(cd BDH_sensor_orientation_bmx160_template; make config_lin)
+	(cd BDH_XENSIV-DPS-3XX_pressure_sensor_template; make config_lin)
 .PHONY: config_lin
 
 lin-configurator:
-	(cd BDH_sensor_orientation_bmx160_template; make lin-configurator)
+	(cd BDH_XENSIV-DPS-3XX_pressure_sensor_template; make lin-configurator)
 .PHONY: lin-configurator
 

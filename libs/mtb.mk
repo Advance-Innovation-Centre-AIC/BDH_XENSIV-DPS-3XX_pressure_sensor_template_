@@ -10,42 +10,36 @@
 SEARCH_TARGET_APP_CY8CKIT-062S2-43012=bsps/TARGET_APP_CY8CKIT-062S2-43012
 
 # The search paths for the included middleware
-SEARCH_mtb-pdl-cat1=../mtb_shared/mtb-pdl-cat1/release-v3.0.0
-SEARCH_retarget-io=../mtb_shared/retarget-io/release-v1.3.0
-SEARCH_sensor-orientation-bmx160=../mtb_shared/sensor-orientation-bmx160/release-v1.0.1
-SEARCH_BMI160_driver=../mtb_shared/BMI160_driver/bmi160_v3.9.1
-SEARCH_BMM150-Sensor-API=../mtb_shared/BMM150-Sensor-API/bmm150_v2.0.0
+SEARCH_retarget-io=../mtb_shared/retarget-io/release-v1.4.0
+SEARCH_sensor-xensiv-dps3xx=../mtb_shared/sensor-xensiv-dps3xx/release-v1.0.0
 SEARCH_cat1cm0p=../mtb_shared/cat1cm0p/release-v1.0.0
 SEARCH_cmsis=../mtb_shared/cmsis/release-v5.8.0
 SEARCH_core-lib=../mtb_shared/core-lib/release-v1.3.1
 SEARCH_core-make=../mtb_shared/core-make/release-v3.0.2
 SEARCH_mtb-hal-cat1=../mtb_shared/mtb-hal-cat1/release-v2.2.0
+SEARCH_mtb-pdl-cat1=../mtb_shared/mtb-pdl-cat1/release-v3.1.0
 SEARCH_recipe-make-cat1a=../mtb_shared/recipe-make-cat1a/release-v2.0.0
 
 # Search libraries added to build
-SEARCH_MTB_MK+=$(SEARCH_mtb-pdl-cat1)
 SEARCH_MTB_MK+=$(SEARCH_retarget-io)
-SEARCH_MTB_MK+=$(SEARCH_sensor-orientation-bmx160)
-SEARCH_MTB_MK+=$(SEARCH_BMI160_driver)
-SEARCH_MTB_MK+=$(SEARCH_BMM150-Sensor-API)
+SEARCH_MTB_MK+=$(SEARCH_sensor-xensiv-dps3xx)
 SEARCH_MTB_MK+=$(SEARCH_cat1cm0p)
 SEARCH_MTB_MK+=$(SEARCH_cmsis)
 SEARCH_MTB_MK+=$(SEARCH_core-lib)
 SEARCH_MTB_MK+=$(SEARCH_core-make)
 SEARCH_MTB_MK+=$(SEARCH_mtb-hal-cat1)
+SEARCH_MTB_MK+=$(SEARCH_mtb-pdl-cat1)
 SEARCH_MTB_MK+=$(SEARCH_recipe-make-cat1a)
 
 -include $(CY_INTERNAL_APP_PATH)/importedbsp.mk
-COMPONENTS += MW_MTB_PDL_CAT1
 COMPONENTS += MW_RETARGET_IO
-COMPONENTS += MW_SENSOR_ORIENTATION_BMX160
-COMPONENTS += MW_BMI160_DRIVER
-COMPONENTS += MW_BMM150_SENSOR_API
+COMPONENTS += MW_SENSOR_XENSIV_DPS3XX
 COMPONENTS += MW_CAT1CM0P
 COMPONENTS += MW_CMSIS
 COMPONENTS += MW_CORE_LIB
 COMPONENTS += MW_CORE_MAKE
 COMPONENTS += MW_MTB_HAL_CAT1
+COMPONENTS += MW_MTB_PDL_CAT1
 COMPONENTS += MW_RECIPE_MAKE_CAT1A
 
 # Register map file

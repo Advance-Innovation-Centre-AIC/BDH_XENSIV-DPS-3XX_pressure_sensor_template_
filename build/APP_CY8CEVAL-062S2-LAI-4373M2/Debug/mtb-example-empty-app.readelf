@@ -1,0 +1,57 @@
+There are 28 section headers, starting at offset 0x1169d0:
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .cy_m0p_image     PROGBITS        10000000 010000 001850 00   A  0   0  4
+  [ 2] .text             PROGBITS        10002000 012000 00b5c0 00  AX  0   0 16
+  [ 3] .ARM.exidx        ARM_EXIDX       1000d5c0 01d5c0 000008 00  AL  2   0  4
+  [ 4] .copy.table       PROGBITS        1000d5c8 01d5c8 000018 00  WA  0   0  1
+  [ 5] .zero.table       PROGBITS        1000d5e0 01d5e0 000008 00  WA  0   0  1
+  [ 6] .ramVectors       PROGBITS        08002000 0228d8 0002e0 00      0   0  8
+  [ 7] .data             PROGBITS        080022e0 0222e0 0005f0 00  AX  0   0  8
+  [ 8] .cy_sharedmem     PROGBITS        080028d0 0228d0 000008 00  WA  0   0  4
+  [ 9] .noinit           NOBITS          080028d8 0228d8 0000e0 00  WA  0   0  8
+  [10] .bss              NOBITS          080029b8 0229b8 000510 00  WA  0   0  4
+  [11] .heap             NOBITS          08002ec8 022ec8 0fb938 00   A  0   0  8
+  [12] .stack_dummy      PROGBITS        080fe800 022bb8 001000 00      0   0  8
+  [13] .ARM.attributes   ARM_ATTRIBUTES  00000000 023bb8 00002e 00      0   0  1
+  [14] .comment          PROGBITS        00000000 023be6 000049 01  MS  0   0  1
+  [15] .debug_line       PROGBITS        00000000 023c2f 023629 00      0   0  1
+  [16] .debug_info       PROGBITS        00000000 047258 07163c 00      0   0  1
+  [17] .debug_abbrev     PROGBITS        00000000 0b8894 0077df 00      0   0  1
+  [18] .debug_aranges    PROGBITS        00000000 0c0078 001bd8 00      0   0  8
+  [19] .debug_str        PROGBITS        00000000 0c1c50 01e7d4 01  MS  0   0  1
+  [20] .debug_loc        PROGBITS        00000000 0e0424 0212b6 00      0   0  1
+  [21] .debug_ranges     PROGBITS        00000000 1016da 002eb8 00      0   0  1
+  [22] .debug_frame      PROGBITS        00000000 104594 005cb0 00      0   0  4
+  [23] .stab             PROGBITS        00000000 10a244 00009c 0c     24   0  4
+  [24] .stabstr          STRTAB          00000000 10a2e0 00014f 00      0   0  1
+  [25] .symtab           SYMTAB          00000000 10a430 0074f0 10     26 1217  4
+  [26] .strtab           STRTAB          00000000 111920 004f8d 00      0   0  1
+  [27] .shstrtab         STRTAB          00000000 1168ad 000120 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  y (purecode), p (processor specific)
+
+Elf file type is EXEC (Executable file)
+Entry point 0x10002325
+There are 5 program headers, starting at offset 52
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  EXIDX          0x01d5c0 0x1000d5c0 0x1000d5c0 0x00008 0x00008 R   0x4
+  LOAD           0x010000 0x10000000 0x10000000 0x0d5e8 0x0d5e8 RWE 0x10000
+  LOAD           0x0222e0 0x080022e0 0x1000d5e8 0x005f8 0x006d8 RWE 0x10000
+  LOAD           0x0029b8 0x080029b8 0x1000dbe0 0x00000 0x00510 RW  0x10000
+  LOAD           0x002ec8 0x08002ec8 0x1000dbe0 0x00000 0xfb938 R   0x10000
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .ARM.exidx 
+   01     .cy_m0p_image .text .ARM.exidx .copy.table .zero.table 
+   02     .data .cy_sharedmem .noinit 
+   03     .bss 
+   04     .heap 
