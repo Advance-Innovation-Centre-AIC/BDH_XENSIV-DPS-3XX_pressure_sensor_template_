@@ -1,4 +1,4 @@
-# Empty application template
+# Reading_XENSIV-DPS-3XX_Pressure_Sensor_Template
 
 This is a minimal starter application template for Infineon MCU devices.
 
